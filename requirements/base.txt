@@ -47,5 +47,4 @@ redis>=2.10.5
 celery==4.0.2
 
 # Your custom requirements go here
-
-django-telegram-bot
+django-telegrambot

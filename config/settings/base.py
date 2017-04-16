@@ -52,6 +52,8 @@ THIRD_PARTY_APPS = [
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+
+    'django_telegrambot',
 ]
 
 # Apps specific for this project go here.
@@ -283,3 +285,9 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+#Django Telegram Bot settings
+TELEGRAM_BOT_TOKENS = ('275378975:AAENrJy8YopZediFeyyHZOTmemjeG2G3f4Q',)
+#TELEGRAM_WEBHOOK_SITE = 'https://mysite.it'
+TELEGRAM_WEBHOOK_BASE = '/baseurl'
+#TELEGRAM_WEBHOOK_CERTIFICATE = 'cert.pem' #If your site use self-signed certificate, must be set with location of your public key certificate. (More info at https://core.telegram.org/bots/self-signed )
