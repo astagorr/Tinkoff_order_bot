@@ -1,0 +1,5 @@
+[run]
+include = tinkoff_order_bot/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
