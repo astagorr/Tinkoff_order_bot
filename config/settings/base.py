@@ -288,6 +288,6 @@ ADMIN_URL = r'^admin/'
 
 #Django Telegram Bot settings
 TELEGRAM_BOT_TOKENS = ('275378975:AAENrJy8YopZediFeyyHZOTmemjeG2G3f4Q',)
-TELEGRAM_WEBHOOK_SITE = 'https://127.0.0.1'
+TELEGRAM_WEBHOOK_SITE = 'https://178.62.212.110'
 TELEGRAM_WEBHOOK_BASE = '/ordersbot'
-#TELEGRAM_WEBHOOK_CERTIFICATE = 'cert.pem' #If your site use self-signed certificate, must be set with location of your public key certificate. (More info at https://core.telegram.org/bots/self-signed )
+TELEGRAM_WEBHOOK_CERTIFICATE = 'webhook_cert.pem' #If your site use self-signed certificate, must be set with location of your public key certificate. (More info at https://core.telegram.org/bots/self-signed )
