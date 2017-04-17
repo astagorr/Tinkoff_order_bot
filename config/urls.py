@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^users/', include('tinkoff_order_bot.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
+    url(r'^orders/', include('orders.urls', namespace='orders'))
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

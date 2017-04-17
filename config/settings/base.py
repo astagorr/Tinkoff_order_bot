@@ -60,6 +60,7 @@ LOCAL_APPS = [
     # custom users app
     'tinkoff_order_bot.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'tinkoff_order_bot.orders.apps.OrdersConfig'
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -286,7 +287,7 @@ ADMIN_URL = r'^admin/'
 # ------------------------------------------------------------------------------
 
 #Django Telegram Bot settings
-TELEGRAM_BOT_TOKENS = ('275378975:AAENrJy8YopZediFeyyHZOTmemjeG2G3f4Q',)
+TELEGRAM_BOT_TOKENS = ('345392316:AAGmMZBBY8pvMM9KpeOJoeoNC-FNVvTvYQI',)
 TELEGRAM_WEBHOOK_SITE = 'https://178.62.212.110'
 TELEGRAM_WEBHOOK_BASE = '/ordersbot'
 TELEGRAM_WEBHOOK_CERTIFICATE = 'webhook_cert.pem' #If your site use self-signed certificate, must be set with location of your public key certificate. (More info at https://core.telegram.org/bots/self-signed )
