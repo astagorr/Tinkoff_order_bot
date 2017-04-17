@@ -53,7 +53,7 @@ THIRD_PARTY_APPS = [
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
 
-    'django_telegrambot',
+    'telebot',
 ]
 
 # Apps specific for this project go here.
@@ -61,6 +61,7 @@ LOCAL_APPS = [
     # custom users app
     'tinkoff_order_bot.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'tinkoff_order_bot.orders.apps.OrdersConfig'
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
