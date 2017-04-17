@@ -1,7 +1,6 @@
 import json
 import logging
 
-import telepot
 from django.template.loader import render_to_string
 from django.http import HttpResponseForbidden, HttpResponseBadRequest, JsonResponse
 from django.views.generic import View
@@ -9,8 +8,12 @@ from django.views.decorators.csrf import csrf_exempt
 from django.utils.decorators import method_decorator
 from django.conf import settings
 
-TelegramBot = telepot.Bot('345392316:AAGmMZBBY8pvMM9KpeOJoeoNC-FNVvTvYQI')
+import telepot
+from config.settings.base import TELEGRAM_BOT_TOKEN, TELEGRAM_WEBHOOK_BASE, TELEGRAM_WEBHOOK_SITE
 
+TelegramBot = telepot.Bot(TELEGRAM_BOT_TOKEN)
+TelegramBot.setWebhook('{site}/{base}/bot/{bot_token}/'.format(site=TELEGRAM_WEBHOOK_SITE, base=TELEGRAM_WEBHOOK_BASE,
+                                                               bot_token=TELEGRAM_BOT_TOKEN))
 logger = logging.getLogger('telegram.bot')
 
 
