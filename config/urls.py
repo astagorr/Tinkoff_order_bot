@@ -19,8 +19,6 @@ urlpatterns = [
     url(r'^users/', include('tinkoff_order_bot.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
-    # Your stuff: custom urls includes go here
-    url(r'^ordersbot/', include('django_telegrambot.urls'))
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

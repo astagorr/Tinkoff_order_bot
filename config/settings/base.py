@@ -53,7 +53,6 @@ THIRD_PARTY_APPS = [
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
 
-    'django_telegrambot',
 ]
 
 # Apps specific for this project go here.
